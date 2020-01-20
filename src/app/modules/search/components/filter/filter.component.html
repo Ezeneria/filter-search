@@ -1,0 +1,16 @@
+<form [formGroup]="searchGroup" class="example-form" (ngSubmit)="search()">
+  <mat-form-field>
+    <input  matInput
+            placeholder="Название"
+            formControlName="name"
+    />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input  matInput
+            placeholder="Категория"
+            formControlName="type"
+    />
+  </mat-form-field>
+  <app-button></app-button>
+</form>
